@@ -1,9 +1,18 @@
-class vehicle(object):
-    def __init__(self, property1, property2, property3):
-        self.property1 = property1
-        self.property2 = property2
-        self.property3 = property3
+class automobile(object):
+    def __init__(self, steering, numWheels, numDoors):
+        self.steering = steering
+        self.numWheels = numWheels
+        self.numDoors = numDoors
 
     # Getters
-    def getProperty1(self):
-        return self.property1
+    def getSteering(self):
+        return self.steering
+    
+    def getNumWheels(self):
+        return self.numWheels
+    
+    def getNumDoors(self):
+        return self.numDoors
+    
+    def setNumWheels(self, data):
+        self.numWheels = data
